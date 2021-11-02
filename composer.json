@@ -44,7 +44,8 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --ansi",
+            "curl -L https://github.com/yannoff/laradoc/releases/latest/download/install.sh | bash"
         ]
     },
     "extra": {
